@@ -12,6 +12,9 @@
         }
         .poem {
             transition: transform 0.3s;
+            margin: auto;
+            max-width: 600px; /* Set a max width for better readability */
+            padding: 1rem; /* Add some padding */
         }
         .poem:hover {
             transform: scale(1.02);
@@ -20,7 +23,29 @@
         .hidden {
             display: none;
         }
+        /* Responsive font sizes */
+        h1 {
+            font-size: 2.5rem; /* Larger title */
+        }
+        h2 {
+            font-size: 1.75rem; /* Adjust poem titles */
+        }
+        pre {
+            font-size: 1rem; /* Default font size for poems */
+        }
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 3rem; /* Increase title size on larger screens */
+            }
+            h2 {
+                font-size: 2rem; /* Increase poem title size on larger screens */
+            }
+            pre {
+                font-size: 1.125rem; /* Slightly larger text on larger screens */
+            }
+        }
     </style>
+    
 </head>
 <body class="p-6">
 
@@ -301,7 +326,7 @@ And we will dance in the dark
                             <section id="about" class="mt-12">
                                 <h2 class="text-3xl font-bold text-gray-800">About Me</h2>
                                 <p class="mt-4 text-gray-700">
-                                    Hello! I am Nyx, a poet with a passion for capturing emotions and experiences through words. My poetry reflects the beauty and complexity of life, love, and the human experience. I hope you find a piece of yourself in my work. And i hope you like any of my works.
+                                    Hello! I am Nyx, a poet with a passion for capturing emotions and experiences through words. My poetry reflects the beauty and complexity of life, love, and the human experience. I hope you find a piece of yourself in my work. And i hope you like any of my work.
                                 </p>
                                 <p class="mt-2 text-gray-700">
                                     Feel free to reach out to me at <a href="mailto:spacenyc233@gmail.com" class="text-blue-500 underline">spacenyx233@gmail.com</a>
