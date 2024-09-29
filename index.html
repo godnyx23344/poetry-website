@@ -3,324 +3,332 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Poetry Collection</title>
+    <title>Nyx's Poetry Library - Poems</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
-            background-image: url('https://www.transparenttextures.com/patterns/asfalt.png');
-            font-family: 'Garamond', serif;
+            background-color: #1a1a1a; /* Darker background for gloomy aesthetic */
+            color: #f5f5f5; /* Lighter text for contrast */
         }
-        .poem {
-            transition: transform 0.3s;
-            margin: auto;
+
+        .section {
+            background-color: #2c2c2c; /* Darker card background */
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-        .poem:hover {
-            transform: scale(1.02);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        .hidden {
-            display: none;
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
         }
     </style>
 </head>
-<body class="p-6">
-
-    <header class="text-center mb-12">
-        <h1 class="text-5xl font-bold text-brown-800">My Poetry Collection</h1>
-        <p class="text-lg mt-4 text-gray-700">A journey through words and emotions</p>
+<body class="font-serif bg-gray-900">
+    <header class="text-center p-5 bg-gray-800 text-white">
+        <h1 class="text-5xl font-bold">Nyc's Poetry Library</h1>
+        <nav class="mt-4">
+            <a href="index.html" class="mx-3 hover:underline">Home</a>
+            <a href="about.html" class="mx-3 hover:underline">About</a>
+            <a href="poems.html" class="mx-3 hover:underline">Poems</a>
+            <a href="login.html" class="mx-3 hover:underline">Login</a>
+            <a href="signup.html" class="mx-3 hover:underline">Sign Up</a>
+        </nav>
     </header>
-
-    <nav class="mb-6">
-        <ul class="flex justify-center space-x-6">
-            <li><a href="#poems" class="text-lg text-gray-700 hover:underline">Poems</a></li>
-            <li><a href="#about" class="text-lg text-gray-700 hover:underline">About Me</a></li>
-            <li><a href="#login" class="text-lg text-gray-700 hover:underline">Login</a></li>
-            <li><a href="#signup" class="text-lg text-gray-700 hover:underline">Signup</a></li>
-            <li><a href="#author" class="text-lg text-gray-700 hover:underline">Author Page</a></li>
-        </ul>
-    </nav>
-
-    <main class="max-w-6xl mx-auto">
-        <section id="poems" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            <!-- Poem Articles Here -->
-            <article class="poem p-4 bg-white rounded-lg shadow-md">
-                <h2 class="text-xl md:text-2xl font-semibold text-gray-800">"Words are never enough"</h2>
-                <pre class="mt-2 text-gray-600">
-Simple but never dead
-The words left hanging in the air,
-Unable to catch them,
-They fall to the ground.
-Buried deep inside not to live,
-Not to die but remain unknown,
-Hidden from people left alone,
-Covered in a blanket
-Not long ago, left behind.
-
-I still dream of you,
-Not too much,
-But sometimes, when it rains,
-My mind wanders to your home,
-Thinking of you.
-                </pre>
-            </article>
-            <article class="poem p-4 bg-white rounded-lg shadow-md">
-                <h2 class="text-2xl font-semibold text-gray-800">"Man"</h2>
-                <pre class="mt-2 text-gray-600">
-His eyes burn with rage—
-trying to strangle the crowd
-with nothing but his looks.
-
-He's angry.
-They never understood him,
-mocked him,
-beat him down.
-
-He is a man.
-He is a god.
-He is human.
-
-But he is nothing,
-nothing but flesh and dirt.
-
-And he will return to the dirt.
-
-In the end, nothing matters.
-Everything will be forgotten.
-                </pre>
-            </article>
-            <article class="poem p-4 bg-white rounded-lg shadow-md">
-                <h2 class="text-2xl font-semibold text-gray-800">"Love"</h2>
-                <pre class="mt-2 text-gray-600">
-It's not love
-if you're constantly thinking about them—
-that's obsession.
-They're two very different entities.
-Love is caring for the person,
-not for who they are
-or what they are.
-People have changed the meaning of love
-with their petty games.
-Even the kids these days say,
-"I manipulate her/him,
-I can make them cry whenever I want."
-"They're weak,
-I can do anything I want to them."
-In truth, love never asks for anything in return—
-not even the love they gave you.
-The most grateful creatures
-are those who seek love,
-but never get anything.
-Such pitiful, miserable souls
-                </pre>
-            </article>
-            
-            <article class="poem p-4 bg-white rounded-lg shadow-md">
-                <h2 class="text-2xl font-semibold text-gray-800">"/???"</h2>
-                <pre class="mt-2 text-gray-600">
-He fell in love,
-watching her dance in front of the crowd,
-each movement a whisper of freedom.
-But once they were together,
-he caught her grace,
-never allowing her to dance again—
-not once, nor did she rebel.
-Is this love?
-                </pre>
-            </article>
-            <article class="poem p-4 bg-white rounded-lg shadow-md">
-                <h2 class="text-2xl font-semibold text-gray-800">"She is......"</h2>
-                <pre class="mt-2 text-gray-600">
-She is the poem unwritten,
-A melody that can be found anywhere.
-More beauty, more heart than any words said,
-A kind soul in between these filthy mortals.
-Her presence brightens one's day;
-Her eyes can change from sad to happy,
-Turning tears into laughter.
-
-She is a blessing to have.
-She helps others before caring for herself.
-She is kind, looks after her parents;
-That kindness may hurt her,
-But she doesn't abandon that kindness.
-
-She sees her parents' struggles
-And helps them to her best.
-Her wish is to make them the proudest parents on earth.
-She loves her friends
-And tries to make them better.
-
-Sometimes she acts dumb,
-Like she doubts herself,
-That she won't succeed,
-Always worries
-That what she's done
-Isn't enough.
-She pushes through with her little strength.
-She persists, she fights,
-And she gets what she wants;
-Sometimes she even achieves the impossible.
-
-She says
-She is not beautiful.
-True, she's not a model,
-But that doesn't mean she's not perfect.
-The way those eyes shine
-Like earth kissed by spring rain,
-Promising life and happiness,
-Mirrored by her wide smile,
-Though not often seen—
-Just one smile from her
-Is like a ray of sunshine
-Through those broken windows,
-Bringing light into darkness
-that knew nothing but darkness,
-Warm enough to melt the walls of the coldest hearts.
-
-I say
-She's often right,
-But the subject
-She becomes herself
-And she's far from the truth.
-She's absolutely wonderful,
-A perfect person,
-A perfect friend,
-The most beautiful woman on earth
-                </pre>
-            </article>
-            <article class="poem p-4 bg-white rounded-lg shadow-md">
-                <h2 class="text-2xl font-semibold text-gray-800">"My rose"</h2>
-                <pre class="mt-2 text-gray-600">
-A rose that grows in the shade
-Beautiful but without light
-It's thorns ready to tear flesh
-While her eyes hold a thousand complaints
-
-She smiles despite the pain
-Hides her tears behind the scent
-She wishes for escape
-But fears losing her way
-
-She is beautiful her delicate grace
-Her heart is heavy
-Waiting for sun that is yet to come
-Like a distant dream
-
-In the quiet night, the sky calls
-They whisper about her among the clouds
-Whisper about hope
-That tomorrow might shine despite the clouds
-                </pre>
-            </article>
-            <article class="poem p-4 bg-white rounded-lg shadow-md">
-                <h2 class="text-2xl font-semibold text-gray-800">"No-name"</h2>
-                <pre class="mt-2 text-gray-600">
-I’ve met so many people,
-But when I close my eyes,
-It’s always those brown eyes I see,
-Still holding on to something, God knows what.
-Because it’s you,
-And it will always be you
-                </pre>
-            </article>
-            <article class="poem p-4 bg-white rounded-lg shadow-md">
-                <h2 class="text-2xl font-semibold text-gray-800">"Alone am I?"</h2>
-                <pre class="mt-2 text-gray-600">
-I’ve met so many people,
-But when I close my eyes,
-It’s always those brown eyes I see,
-Still holding on to something, God knows what.
-Because it’s you,
-And it will always be you
-                </pre>
-            </article>
-            <article class="poem p-4 bg-white rounded-lg shadow-md">
-                <h2 class="text-2xl font-semibold text-gray-800">"Poetry"</h2>
-                <pre class="mt-2 text-gray-600">
-A sky full of poetry and words alike
-Sweet as whispers yet sharp as thunder
-Never did I think with in hand
-I'd write lines that haunt me at night
-                </pre>
-            </article>
-            <article class="poem p-4 bg-white rounded-lg shadow-md">
-                <h2 class="text-2xl font-semibold text-gray-800">"Angel"</h2>
-                <pre class="mt-2 text-gray-600">
-She stood on the stage in her golden white dress,
-Like an angel.
-Her serene laughter echoed through the hall,
-And I just stood there, watching her.
-From afar, it was sweet yet painful,
-Perhaps one day, we will stand next to each other   
-                                    </pre>
-                                </article>
-                                <article class="poem p-4 bg-white rounded-lg shadow-md">
-                                    <h2 class="text-2xl font-semibold text-gray-800">"For my love"</h2>
-                                    <pre class="mt-2 text-gray-600">
-I just want to be loved by her.
-Even though it feels impossible,
-I've never thought of giving up.
-                                        
-If not today, or tomorrow,
-maybe one day, we'll find love.
-for we are destined to be together.
-                                        
-Right, my love?
-                                    </pre>
-                                </article>
-                                <article class="poem p-4 bg-white rounded-lg shadow-md">
-                                    <h2 class="text-2xl font-semibold text-gray-800">"Monster am i?"</h2>
-                                    <pre class="mt-2 text-gray-600">
-I live in a home with monsters
-We laugh under the roof always giggling
-Their eyes glow in the shadows, sharp teeth,
-Their smiles are more wicked
-                                        
-The food like lava burns my tongue
-And milk drips from the twisted trees
-I hate living like a caged rat
-Yet i love these weird monsters
-Weird am i?
-                                        
-One day i'll take you to my house
-Nestled deep in the forest
-Where the trees whisper about me
-And we will dance in the dark
-                                    </pre>
-                                </article>
-
-            <!-- Repeat for other poems -->
-        </section>
-
-        <section id="about" class="mt-12">
-            <h2 class="text-3xl font-bold text-gray-800">About Me</h2>
-            <p class="mt-4 text-gray-700">
-                Hello! I am Nyx, a poet with a passion for capturing emotions and experiences through words. My poetry reflects the beauty and complexity of life, love, and the human experience. I hope you find a piece of yourself in my work. And I hope you like any of my work.
-            </p>
-            <p class="mt-2 text-gray-700">
-                Feel free to reach out to me at <a href="mailto:spacenyc233@gmail.com" class="text-blue-500 underline">spacenyx233@gmail.com</a>
-            </p>
-        </section>
-
-        <section id="social" class="mt-12">
-            <h2 class="text-3xl font-bold text-gray-800">Follow Me</h2>
-            <div class="flex justify-center space-x-4 mt-4">
-                <a href="https://www.instagram.com" target="_blank">
-                    <img src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png" alt="Instagram" class="w-8 h-8"/>
-                </a>
-                <a href="https://www.facebook.com" target="_blank">
-                    <img src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png" alt="Facebook" class="w-8 h-8"/>
-                </a>
-                <a href="https://twitter.com" target="_blank">
-                    <img src="https://img.icons8.com/ios-filled/50/000000/twitter-squared.png" alt="Twitter" class="w-8 h-8"/>
-                </a>
+    <main class="p-5">
+        <h2 class="text-3xl font-semibold mb-4">Poems</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- Poem Cards -->
+            <div class="card p-4 section">
+                <h3 class="text-xl font-bold">Words are never enough</h3>
+                <p>Simple but never dead<br>
+                The words left hanging in the air,<br>
+                Unable to catch them,<br>
+                They fall to the ground.<br>
+                Buried deep inside not to live,<br>
+                Not to die but remain unknown,<br>
+                Hidden from people left alone,<br>
+                Covered in a blanket<br>
+                Not long ago, left behind.<br>
+                <br>
+                I still dream of you,<br>
+                Not too much,<br>
+                But sometimes, when it rains,<br>
+                My mind wanders to your home,<br>
+                Thinking of you.</p>
             </div>
-        </section>
+
+            <div class="card p-4 section">
+                <h3 class="text-xl font-bold">Man</h3>
+                <p>His eyes burn with rage—<br>
+                trying to strangle the crowd<br>
+                with nothing but his looks.<br>
+                <br>
+                He's angry.<br>
+                They never understood him,<br>
+                mocked him,<br>
+                beat him down.<br>
+                <br>
+                He is a man.<br>
+                He is a god.<br>
+                He is human.<br>
+                <br>
+                But he is nothing,<br>
+                nothing but flesh and dirt.<br>
+                <br>
+                And he will return to the dirt.<br>
+                <br>
+                In the end, nothing matters.<br>
+                Everything will be forgotten.</p>
+            </div>
+
+            <div class="card p-4 section">
+                <h3 class="text-xl font-bold">Love</h3>
+                <p>It's not love<br>
+                if you're constantly thinking about them—<br>
+                that's obsession.<br>
+                They're two very different entities.<br>
+                Love is caring for the person,<br>
+                not for who they are<br>
+                or what they are.<br>
+                People have changed the meaning of love<br>
+                with their petty games.<br>
+                Even the kids these days say,<br>
+                "I manipulate her/him,<br>
+                I can make them cry whenever I want."<br>
+                "They're weak,<br>
+                I can do anything I want to them."<br>
+                In truth, love never asks for anything in return—<br>
+                not even the love they gave you.<br>
+                The most grateful creatures<br>
+                are those who seek love,<br>
+                but never get anything.<br>
+                Such pitiful, miserable souls.</p>
+            </div>
+
+            <div class="card p-4 section">
+                <h3 class="text-xl font-bold">/???</h3>
+                <p>He fell in love,<br>
+                watching her dance in front of the crowd,<br>
+                each movement a whisper of freedom.<br>
+                But once they were together,<br>
+                he caught her grace,<br>
+                never allowing her to dance again—<br>
+                not once, nor did she rebel.<br>
+                Is this love?</p>
+            </div>
+
+            <div class="card p-4 section">
+                <h3 class="text-xl font-bold">She is......</h3>
+                <p>She is the poem unwritten,<br>
+                A melody that can be found anywhere.<br>
+                More beauty, more heart than any words said,<br>
+                A kind soul in between these filthy mortals.<br>
+                Her presence brightens one's day;<br>
+                Her eyes can change from sad to happy,<br>
+                Turning tears into laughter.<br>
+                <br>
+                She is a blessing to have.<br>
+                She helps others before caring for herself.<br>
+                She is kind, looks after her parents;<br>
+                That kindness may hurt her,<br>
+                But she doesn't abandon that kindness.<br>
+                <br>
+                She sees her parents' struggles<br>
+                And helps them to her best.<br>
+                Her wish is to make them the proudest parents on earth.<br>
+                She loves her friends<br>
+                And tries to make them better.<br>
+                <br>
+                Sometimes she acts dumb,<br>
+                Like she doubts herself,<br>
+                That she won't succeed,<br>
+                Always worries<br>
+                That what she's done<br>
+                Isn't enough.<br>
+                She pushes through with her little strength.<br>
+                She persists, she fights,<br>
+                And she gets what she wants;<br>
+                Sometimes she even achieves the impossible.<br>
+                <br>
+                She says<br>
+                She is not beautiful.<br>
+                True, she's not a model,<br>
+                But that doesn't mean she's not perfect.<br>
+                The way those eyes shine<br>
+                Like earth kissed by spring rain,<br>
+                Promising life and happiness,<br>
+                Mirrored by her wide smile,<br>
+                Though not often seen—<br>
+                Just one smile from her<br>
+                Is like a ray of sunshine<br>
+                Through those broken windows,<br>
+                Bringing light into darkness<br>
+                That knew nothing but darkness,<br>
+                Warm enough to melt the walls of the coldest hearts.<br>
+                <br>
+                I say<br>
+                She's often right,<br>
+                But the subject<br>
+                She becomes herself<br>
+                And she's far from the truth.<br>
+                She's absolutely wonderful,<br>
+                A perfect person,<br>
+                A perfect friend,<br>
+                The most beautiful woman on earth.</p>
+            </div>
+
+            <div class="card p-4 section">
+                <h3 class="text-xl font-bold">My rose</h3>
+                <p>A rose that grows in the shade<br>
+                Beautiful but without light<br>
+                It's thorns ready to tear flesh<br>
+                While her eyes hold a thousand complaints<br>
+                <br>
+                She smiles despite the pain<br>
+                Hides her tears behind the scent<br>
+                She wishes for escape<br>
+                But fears losing her way<br>
+                <br>
+                She is beautiful her delicate grace<br>
+                Her heart is heavy<br>
+                Waiting for sun that is yet to come<br>
+                Like a distant dream<br>
+                <br>
+                In the quiet night, the sky calls<br>
+                They whisper about her among the clouds<br>
+                Whisper about hope<br>
+                That tomorrow might shine despite the clouds.</p>
+            </div>
+
+            <div class="card p-4 section">
+                <h3 class="text-xl font-bold">No-name</h3>
+                <p>I’ve met so many people,<br>
+                But when I close my eyes,<br>
+                It’s always those brown eyes I see,<br>
+                Still holding on to something, God knows what.<br>
+                Because it’s you,<br>
+                And it will always be you.<br>
+                <br>
+                You held my hand and promised forever,<br>
+                I thought I was foolish to believe,<br>
+                But that was more than I could have ever wished for.<br>
+                <br>
+                You kissed my lips softly<br>
+                And all I could think of<br>
+                Was the way we could be if we just let go,<br>
+                A perfect picture of love<br>
+                Painted with every moment we shared.<br>
+                <br>
+                But those moments faded like a forgotten dream,<br>
+                Chased away by the noise of the world<br>
+                Until all that’s left is silence.<br>
+                <br>
+                I’ve met so many people,<br>
+                But when I close my eyes,<br>
+                I always see you.</p>
+            </div>
+
+            <div class="card p-4 section">
+                <h3 class="text-xl font-bold">Alone am I?</h3>
+                <p>Alone am I in this world,<br>
+                A lonely island lost at sea,<br>
+                The stars seem so far away,<br>
+                Their light can barely reach me.<br>
+                <br>
+                I gaze at the moon, a distant friend,<br>
+                Who listens but cannot touch,<br>
+                A silent witness to my thoughts,<br>
+                My sorrows, and all that I clutch.<br>
+                <br>
+                The wind carries whispers of the past,<br>
+                Echoes of laughter, shadows of tears,<br>
+                Memories that fade like smoke in the air,<br>
+                Leaving me with my fears.<br>
+                <br>
+                Will I find my way back,<br>
+                To the warmth of a gentle embrace?<br>
+                Or am I destined to wander,<br>
+                This empty, desolate place?</p>
+            </div>
+
+            <div class="card p-4 section">
+                <h3 class="text-xl font-bold">Angel</h3>
+                <p>She stood on the stage in her golden white dress,<br>
+                Like an angel.<br>
+                Her serene laughter echoed through the hall,<br>
+                And I just stood there, watching her.<br>
+                From afar, it was sweet yet painful,<br>
+                Perhaps one day, we will stand next to each other</p>
+            </div>
+
+            <div class="card p-4 section">
+                <h3 class="text-xl font-bold">For my love</h3>
+                <p>I just want to be loved by her.<br>
+                Even though it feels impossible,<br>
+                I've never thought of giving up.<br>
+                <br>
+                If not today, or tomorrow,<br>
+                maybe one day, we'll find love.<br>
+                She will love me,<br>
+                for we are destined to be together.<br>
+                <br>
+                Right, my love?</p>
+            </div>
+
+            <div class="card p-4 section">
+                <h3 class="text-xl font-bold">Monster am I?</h3>
+                <p>I live in a home with monsters<br>
+                We laugh under the roof always giggling<br>
+                Their eyes glow in the shadows, sharp teeth,<br>
+                Their smiles are more wicked<br>
+                <br>
+                The food like lava burns my tongue<br>
+                And milk drips from the twisted trees<br>
+                I hate living like a caged rat<br>
+                Yet I love these weird monsters<br>
+                Weird am I?<br>
+                <br>
+                One day I'll take you to my house<br>
+                Nestled deep in the forest<br>
+                Where the trees whisper about me<br>
+                And we will dance in the dark</p>
+            </div>
+          
+            <div class="card p-4 section">
+                <h3 class="text-xl font-bold">Dear Me.....</h3>
+                <p>I watch her dance in the pale moonlight,<br>
+                Her wild heart that never stays.<br>
+                Yet for her, the world stands still,<br>
+                Her sigh breaks men like me.<br>
+                <br>
+                In every glance, in every sigh,<br>
+                She holds the world beneath her eyes.<br>
+                A gentle hand, a steady will,<br>
+                And when she smiles, the stars ignite.<br>
+                <br>
+                For love is her, and she is love,<br>
+                And in her eyes, I see it clear<br>
+                All that I want, and all that’s dear.</p>
+            </div>
+            
+          
+        </div>
     </main>
-
-    <footer class="text-center mt-12">
-        <p class="text-gray-600">&copy; 2024 Nyx. All rights reserved.</p>
+    <footer class="text-center p-5 bg-gray-800 text-white">
+        <p>&copy; 2024 Nyx's Poetry Library</p>
+        <div>
+            <a href="#" class="mx-2 text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="mx-2 text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="mx-2 text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="mx-2 text-gray-400 hover:text-white"><i class="fab fa-github"></i></a>
+        </div>
     </footer>
-
 </body>
 </html>
